@@ -1,0 +1,5 @@
+ldap:
+  host: 'ldap.mycompany.com'
+  port: 389
+  base: 'ou=People,dc=mycompany,dc=com'
+directory: '/etc/httpd/svn-access'
