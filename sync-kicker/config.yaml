@@ -1,0 +1,7 @@
+---
+:host: "localhost"
+:port: 8042
+:user: "www-data"
+:logpath: "/var/log/svnsync"
+:keytab: "/etc/krb5/svnsync.keytab"
+:syncopts: "--non-interactive --trust-server-cert --config-dir /etc/svnsync/subversion"

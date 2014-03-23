@@ -1,0 +1,10 @@
+#!/bin/sh
+# Send a kick message to repository mirror(s) after a revprop change, causing
+# the mirror(s) to perform a copy-revprops action.
+
+path=(${1//\// })
+space=${path[4]}
+repo=${path[5]}
+rev=$2
+
+/etc/httpd/scripts/kick.sh copy-revprops $space $repo $rev

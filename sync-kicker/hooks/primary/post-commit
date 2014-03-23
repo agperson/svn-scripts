@@ -1,0 +1,9 @@
+#!/bin/sh
+# Send a kick message to repository mirror(s) after a commit, causing the
+# mirror(s) to perform a sync action.
+
+path=(${1//\// })
+space=${path[4]}
+repo=${path[5]}
+
+/etc/httpd/scripts/kick.sh sync $space $repo

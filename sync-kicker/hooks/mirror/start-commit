@@ -1,0 +1,9 @@
+#!/bin/sh
+USER="$2"
+if [ "$USER" == "www-data/svnsync@EXAMPLE.COM" ]; then
+	exit 0
+else
+	echo "This is a read-only repository.  Only the svnsync user may make changes." >&2
+	exit 1
+fi
+
